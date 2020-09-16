@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bookingIcons {
+  @apply w-20 h-20 flex flex-row justify-center items-center p-1 rounded-full bg-white
+}
+
+@screen sm {
+  .bookingIcons {
+    @apply w-24
+  }
+}
+
+@screen md {
+  .bookingIcons {
+    @apply w-32
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-primary {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.font-secondary {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Pages */
+
+.heading {
+  font-size: 4rem;
+}
+
+@media screen and (min-width:750px) {
+  .heading {
+    font-size: 6rem;
+  }
+}
+
+.hero-bg-img {
+  background-image: url('/assets/imgs/hero-bg.jpg');
+}
+
+.family-room-bg-img {
+  background-image: url('/assets/imgs/FamilyRoom.png');
+}
+
+.female-dorm-bg-img {
+  background-image: url('/assets/imgs/FemaleDorm.jpg');
+}
+
+.mixed-dorm-bg-img {
+  background-image: url('/assets/imgs/MixedDorm.jpg');
+}
+
+.trail-bg-img {
+  height: 50vh;
+  background-image: url('/assets/imgs/trail.jpg');
+}
+
+@media screen and (min-width:750px) {
+  .trail-bg-img {
+    height: 60vh;
+  }
+
+  .mountain-height {
+    bottom: -150px;
+    max-height: 900px;
+  }
+}
+
+
+#contact-section {
+  background-image: url('/assets/imgs/wave.svg');
+}
